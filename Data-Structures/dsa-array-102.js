@@ -57,5 +57,54 @@ console.log('is this an array: ', Array.isArray(objectArr))
 // recommend using the [] operator, saying it is more efficient than
 // calling the Array constructor.
 
+console.log("\n <<    Accessing and Writing Array Elements   >> \n ")
+// Accessing and Writing Array Elements
+// Data is assigned to array element using the [] operator in an
+// assignment statement 
 
+console.log(' numbOfArray is ', numbOfArray);
+
+let sum = 0 ;
+
+numbOfArray.forEach(element =>{
+    numbOfArray[element] = element + 1; // [] operator used
+    sum += numbOfArray[element];
+});
+
+console.log('Updated numbOfArray is ', numbOfArray);
+console.log("Sum of numbOfArray is: ",sum)
+
+// Creating Arrays from Strings
+// Arrays can be created as the result of calling the split() function
+// on a string. This function breaks up a string at a common delimeter,
+// such as  a space for each word, and creates an array consisting
+// of the individual parts of the string.
+
+// Examples:
+let sentence = "the quick brown fox jumped over the lazy dog";
+let words = sentence.split(" ");
+console.log(`I have ${words.length} number of words`)
+
+// Aggregate Array Operations
+console.log("\n <<    Aggregate Array Operations   >> \n ")
+// There are several aggregate operations you can perform on arrays
+
+// 1. You can assign one array to another array:
+
+let nums = [];
+for ( let i = 0; i < 10; i++) {
+    nums[i] = i + 1;
+}
+let sameNums = nums;
+
+console.log(`nums Array is:     ${nums}`);
+console.log(`sameNums Array is: ${sameNums}`);
+
+// NB:
+// However, when you assign one array to another array, 
+// you are assigning a reference to the assigned array. 
+// When you make a change to the original array, that change is reflected
+//  in the other array as well
+
+// This is called a shallow copy;
 

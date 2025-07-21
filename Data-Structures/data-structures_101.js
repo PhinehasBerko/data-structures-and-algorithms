@@ -70,6 +70,17 @@
 // Data Structures is a specific way of organizing, storing and accessing data in a computer system.
 // Algorithms are the step-by-step procedures to perform or solve a specific problem using data structures.
 
+// Why Study Data Structures and Algorithms
+// 1. Efficient Problem Solver
+// 2. Algorithmic Awareness 
+// 3. Improved Logical Thinking
+// 4. Interview Success
+// 5. Coding Confidence
+// 6. Efficiency Expert
+// 7. Innovation Inspiration
+// 8. Future-Proof Your Skills
+// 9. Critical Thinking Champion
+// 10. Stronger Coding Skills
 const allStudents =[ "Phiny","Deli",'Victor','Danny', 'Justice'];
 
 const getStudents = (allStudents, studentName) => {
