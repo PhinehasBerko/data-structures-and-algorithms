@@ -83,3 +83,45 @@ console.log(`Factorial of ${number} is ${factorial(number)}`);
 
 // Example: test factorial(1), factorial(2), factorial(3).
 
+// ===================================================================================
+
+//            Objects and Object-Oriented Programming => OOP
+
+// --------------------------------------------------------------------------------------
+
+// JavaScript provides many different ways for creating and using objects. 
+
+//  Objects are created by defining a constructor function that includes declarations for an
+//  object’s properties and functions, followed by definitions for the functions.
+
+// Here is the constructor function for a checking account object:
+
+function Checking (amount) {
+    this.balance = amount;
+    this.deposit = deposit;
+    this.withdraw = withdraw;
+    this.toString = toString;
+}
+
+// The this keyword is used to tie each function and property to an object instance.  
+
+function deposit (amount) {
+    this.balance += amount
+    return balance
+}
+
+function withdraw(amount) {
+    if (amount >= this.balance) return "Insufficient balance";
+
+    this.balance -= amount
+    return balance
+}
+
+function toString() {
+ return "Balance: " + this.balance;
+ }
+
+
+let account = new Checking(1000)
+
+console.log(account.toString())
